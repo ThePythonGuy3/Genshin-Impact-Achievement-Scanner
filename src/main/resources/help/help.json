@@ -1,0 +1,91 @@
+{
+    "pages": [
+        {
+            "header": "help",
+            "image-name-light": "/help/light-raw.png",
+            "image-name-dark":  "/help/dark-raw.png",
+            "text-lines": [
+                "help-intro-1",
+                "help-intro-2"
+            ]
+        },
+        {
+            "header": "help-main",
+            "image-name-light": "/help/light.png",
+            "image-name-dark":  "/help/dark.png",
+            "text-lines": [
+                "help-main-12",
+                "help-main-3",
+                "help-main-4",
+                "help-main-5",
+                "help-main-6",
+                "help-main-7",
+                "help-main-8",
+                "help-main-9"
+            ]
+        },
+        {
+            "header": "help-paimon",
+            "image-name-light": "/help/paimon1.png",
+            "image-name-dark":  "/help/paimon1.png",
+            "text-lines": [
+                "help-paimon-1",
+                "help-paimon-2"
+            ]
+        },
+        {
+            "header": "help-paimon",
+            "image-name-light": "/help/paimon2.png",
+            "image-name-dark":  "/help/paimon2.png",
+            "text-lines": [
+                "help-paimon-3",
+                "help-paimon-4"
+            ]
+        },
+        {
+            "header": "help-database",
+            "image-name-light": "/help/database-light.png",
+            "image-name-dark":  "/help/database-dark.png",
+            "text-lines": [
+                "help-database-1",
+                "help-database-2",
+                "help-database-3"
+            ]
+        },
+        {
+            "header": "help-category",
+            "image-name-light": "/help/database-light.png",
+            "image-name-dark":  "/help/database-dark.png",
+            "text-lines": [
+                "help-category-1"
+            ]
+        },
+        {
+            "header": "help-video",
+            "image-name-light": "/help/video.png",
+            "image-name-dark":  "/help/video.png",
+            "text-lines": [
+                "help-video-1",
+                "help-video-2"
+            ]
+        },
+        {
+            "header": "help-output",
+            "image-name-light": "/help/output-light.png",
+            "image-name-dark":  "/help/output-dark.png",
+            "text-lines": [
+                "help-output-1"
+            ]
+        },
+        {
+            "header": "help-output",
+            "image-name-light": "/help/paimon3.png",
+            "image-name-dark":  "/help/paimon3.png",
+            "text-lines": [
+                "help-output-2",
+                "help-output-3",
+                "help-output-4"
+            ]
+        }
+    ]
+}

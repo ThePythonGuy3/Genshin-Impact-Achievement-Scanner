@@ -1,0 +1,119 @@
+{
+    "app-title": "Genshin Impact Achievement Scanner",
+
+    "paimon-section-title":  "Paimon.moe",
+    "video-section-title":   "Video Input",
+    "output-section-title":  "Output",
+    "results-section-title": "Scan Results",
+    "scan-section-title":    "Scan",
+
+    "save-file":         "Save File:",
+    "save-file-invalid": "Save File is not valid.",
+    "save-file-moved":   "Save File does not exist or was moved.",
+
+    "video-file":         "Video File:",
+    "video-file-invalid": "Video File is not valid.",
+    "video-file-moved":   "Video File does not exist or was moved.",
+
+    "output-file":        "Output File:",
+    "output-file-exists": "Output File already exists. Starting the Scan, even if you cancel it later, will override your File. Continue?",
+    "output-file-error":  "Output File could not be created.",
+
+    "no-file": "No File selected",
+
+    "cancel-warning": "Cancelling the Process will stop the Scan but keep\nthe Achievements that have already been scanned.\nAre you sure you want to cancel?",
+    "scan-complete":  "Scan Complete.",
+
+    "select": "SELECT",
+    "start":  "START",
+    "cancel": "CANCEL",
+    "sync":   "SYNC",
+
+    "syncing":             "Syncing",
+    "synced":              "Synced",
+    "error-syncing":       "Error syncing",
+    "error-syncing-popup": "Error retrieving Online Database. Check your Internet Connection.\nDefaulting to Local Copy.",
+
+    "account":                "Account:",
+    "online-database":        "Online Database:",
+    "category":               "Category:",
+    "save-file-achievements": "How to treat Save File Achievements:",
+
+    "missing-database":    "NO DATABASE FOUND",
+    "missing-save-file":   "NO SAVE FILE SELECTED",
+    "missing-account":     "NO ACCOUNT SELECTED",
+    "missing-video-file":  "NO VIDEO FILE SELECTED",
+    "missing-output-file": "NO OUTPUT FILE SELECTED",
+    "ready":               "READY",
+    "cancelling":          "CANCELLING",
+
+    "error":   "Error",
+    "warning": "Warning",
+    "info":    "Info",
+    "merge":   "Merge Category",
+    "replace": "Replace Category",
+
+    "save-file-tooltip":   "Select Save File",
+    "sync-tooltip":        "Sync Online Database",
+    "video-file-tooltip":  "Select Video File",
+    "output-file-tooltip": "Select Output File",
+
+    "internal-error": "Internal Error.",
+    
+    "not-a-video":        "Not a Video.",
+    "wrong-aspect-ratio": "The Video's Aspect Ratio is not 16:9.",
+    "no-image-data":      "The Video does not encode any Image Frames.",
+    "file-is-image":      "File is an Image.",
+    "cannot-decode":      "The File cannot be decoded.",
+    "size-too-different": "The Resolution is far from 1920x1080. The Quality of the Scan may be impacted.",
+
+    "settings":             "Settings",
+    "application-language": "Application Language:",
+    "language-reload":      "Changing the Language requires an Application Reload.",
+    "max-threads":          "Maximum Scan Threads:",
+
+    "light-dark-toggle": "Toggle Dark Mode",
+
+    "help":     "Help",
+    "previous": "Previous",
+    "next":     "Next",
+
+    "exit": "Exit",
+
+    "help-intro-1": "This program lets you scan your Genshin Impact achievements without direct interaction with the game. In particular it scans achievements for the website https://paimon.moe, which you would have to use as a tracker if you wanted to use this scanner. It works with video recordings of the game so you will need a screen recorder of some kind that lets you record Genshin Impact as a whole. The following pages act as a tutorial/user manual for the software.",
+    "help-intro-2": "Hope it proves to be useful to you!\n- PyGuy3",
+
+    "help-main":    "Main UI",
+    "help-main-12": "1-2: Paimon.moe Save File input & Account Selection box.\n(More on pages 3-4)",
+    "help-main-3":  "3: Paimon.moe Database Sync Button.\n(More on page 5)",
+    "help-main-4":  "4: Achievement Category of the video to scan.\n(More on page 6)",
+    "help-main-5":  "5: If Merge is selected, achievements already in the save file will be kept, with the scan added on top. Otherwise, the selected category will be fully replaced by the scan.",
+    "help-main-6":  "6: Input Video File selection.\n(More on page 7)",
+    "help-main-7":  "7: Output Save File. This is where the completed scan will be saved.\n(More on page 8)",
+    "help-main-8":  "8: After a Scan, the scanned achievements will be displayed here.",
+    "help-main-9":  "9: Scan Progress Bar & Start Button. The progress bar contains a message informing you of what is missing to begin a scan.",
+
+    "help-paimon":   "Paimon.moe",
+    "help-paimon-1": "You will need a save file from https://paimon.moe (yes, even if you have never used the site before). The save file contains information required for the site to read the scan file created by this program, and it cannot be generated, so it must be downloaded.",
+    "help-paimon-2": "Once you enter the site, you will need to access this menu, and press \"Export & Import Data\".\n(Continues in page 4)",
+    "help-paimon-3": "Press \"Download Data\" to get a local copy of your save file. This is the file you will input into the Paimon.moe Save File input (1).",
+    "help-paimon-4": "Do note the account you want to write to so you select the same one in the Account Selection box (2).",
+
+    "help-database":   "Online Database",
+    "help-database-1": "This program depends on an already-existing database of achievements, in this case the one hosted by https://paimon.moe. This means that an active internet connection is required to fetch it.",
+    "help-database-2": "Without this, the achievements cannot be verified, and an output file cannot be generated since it depends on internal IDs only found inside the database.",
+    "help-database-3": "Since the database changes periodically, you should sync it using the Sync button (3) after every Genshin Impact patch update. A local copy is kept and the program will NOT automatically reload it after Genshin Impact updates, so if you're using an old version of the database, you might not be getting all the achievements you've actually obtained in the output file.",
+
+    "help-category":   "Achievement Category",
+    "help-category-1": "The Category Box (4) lets you select which category of achievements you are going to scan. This is important because the program will only accept one category at a time in a video (this will make more sense in the following pages). So if you had recorded your \"Wonders of the World\" category, and selected \"Memories of the Heart\" in the program, the scan would be empty and the category would be lost in the output.",
+
+    "help-video":   "Video File",
+    "help-video-1": "This program requires a video file to function. It does not control your keyboard and mouse to scan your achievements (which is why it does not break Genshin Impact's Terms of Service), so you must record the files yourself. Each video file must be a screen recording of you scrolling through all your achievements in one singular category (more than one video will be required for multiple categories). The video must be in a 16:9 resolution (ensure Genshin Impact is set to a 16:9 resolution under Graphics settings, ideally set to 1920x1080). You must use the scroll wheel (no dragging the scroll bar) and you must keep your cursor in the red rectangle (do not hover any of the achievements themselves in-game). The video must start already in the achievements menu, with the correct category selected, and must end in that same category.",
+    "help-video-2": "The resulting file is what you are going to input into the Video File input (6). An example input video file can be found in the program's directory or the GitHub repository.",
+
+    "help-output":   "Output File",
+    "help-output-1": "Here you select where the scan output should go. The output file is a valid https://paimon.moe save file, which means you can use it as an input for a future scan if you want to add more achievements or a different category. If you cancel a scan, it will still be updated, since it will count all the achievements the scanner was able to verify before it was interrupted, so no data is lost.\n(What to do with this file in the next page)",
+    "help-output-2": "Once you have a generated file, in the same menu where you downloaded your save file (See page 3) you get the option to \"Select JSON File\". This is where you are going to load the generated save file. Once loaded, it should reload automatically and your achievements should be there under \"Database\" > \"Achievements\".",
+    "help-output-3": "It is important to note the scanner is not 100% exact. This scanner uses Computer Vision and Optical Character Recognition to read the achievements, and they are not without flaw. From my own testing, it should be around 95%-98% accurate, but it depends on the quality of the video provided and other factors. False positives are almost impossible (HoYo would have to make two achievements in a single category with names that are too similar for it to be able to happen) but expect false negatives. Some manual work will be required to make your list 100% exhaustive but this should hopefully remove the vast majority of the work.",
+    "help-output-4": "WARNING: YOU SHOULD KEEP A COPY OF THE ORIGINAL SAVE FILE. I AM NOT RESPONSIBLE FOR THE POTENTIAL LOSS OF SAVE FILE DATA CAUSED BY LOADING A GENERATED SAVE FILE. PROCEED AT YOUR OWN RISK."
+}
