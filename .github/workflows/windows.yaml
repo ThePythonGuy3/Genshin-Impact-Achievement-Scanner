@@ -27,14 +27,24 @@ jobs:
         run: |
           jpackage `
           --name AchievementScanner `
-          --input target/dist `
+          --input target\dist `
           --main-jar AchievementScanner.jar `
           --main-class pyguy.Main `
           --type app-image `
           --dest build
 
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v7
+      - name: Fix Tessdata Location # Yes, it's jank I know
+        shell: pwsh
+        run: Move-Item build\AchievementScanner\app\tessdata build\AchievementScanner\tessdata
+
+      - name: Zip Build
+        shell: pwsh
+        run: Compress-Archive -Path build/AchievementScanner/* -DestinationPath build/AchievementScanner-windows.zip
+
+      - name: Upload to GitHub Release
+        uses: svenstaro/upload-release-action@v2
         with:
-          name: "AchievementScanner-windows"
-          path: build/AchievementScanner/**
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: build/AchievementScanner-windows.zip
+          tag: ${{ github.ref_name }}
+          overwrite: true
