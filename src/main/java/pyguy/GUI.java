@@ -882,14 +882,16 @@ public class GUI
     {
         try
         {
-            URL icon64 = GUI.class.getResource("/icon/" + name + "64.png");
-            URL icon48 = GUI.class.getResource("/icon/" + name + "48.png");
-            URL icon32 = GUI.class.getResource("/icon/" + name + "32.png");
-            URL icon16 = GUI.class.getResource("/icon/" + name + "16.png");
+            URL icon256 = GUI.class.getResource("/icon/" + name + "256.png");
+            URL icon64  = GUI.class.getResource("/icon/" + name + "64.png");
+            URL icon48  = GUI.class.getResource("/icon/" + name + "48.png");
+            URL icon32  = GUI.class.getResource("/icon/" + name + "32.png");
+            URL icon16  = GUI.class.getResource("/icon/" + name + "16.png");
 
-            if (icon64 != null && icon32 != null && icon48 != null&& icon16 != null)
+            if (icon256 != null && icon64 != null && icon32 != null && icon48 != null&& icon16 != null)
             {
                 List<Image> icons = List.of(
+                    Toolkit.getDefaultToolkit().getImage(icon256),
                     Toolkit.getDefaultToolkit().getImage(icon64),
                     Toolkit.getDefaultToolkit().getImage(icon48),
                     Toolkit.getDefaultToolkit().getImage(icon32),

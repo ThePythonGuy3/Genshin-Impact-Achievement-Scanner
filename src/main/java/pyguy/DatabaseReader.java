@@ -240,7 +240,16 @@ public class DatabaseReader
                 return null;
             }
         }
-        else return null;
+        else
+        {
+            try
+            {
+                return DownloadAndStore();
+            } catch (Exception e)
+            {
+                return null;
+            }
+        }
     }
 
     public static Database ForceReload()
