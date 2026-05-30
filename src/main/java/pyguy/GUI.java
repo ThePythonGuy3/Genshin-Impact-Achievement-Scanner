@@ -1032,13 +1032,16 @@ public class GUI
         TemporaryDisable(paimonFileInputHintLabel);
         TemporaryDisable(paimonFileInputField);
         TemporaryDisable(paimonFileChooserButton);
+
         TemporaryDisable(paimonAccountChooserHintLabel);
         TemporaryDisable(paimonAccountChooser);
+
         TemporaryDisable(onlineDatabaseCategoryHintLabel);
         TemporaryDisable(onlineDatabaseHintLabel);
         TemporaryDisable(onlineDatabaseStatusLabel);
         TemporaryDisable(onlineDatabaseSyncButton);
         TemporaryDisable(onlineDatabaseCategoryChooser);
+
         TemporaryDisable(saveFileRadioHintLabel);
         TemporaryDisable(saveFileMergeRadio);
         TemporaryDisable(saveFileReplaceRadio);
@@ -1046,6 +1049,13 @@ public class GUI
         TemporaryDisable(videoChooserHintLabel);
         TemporaryDisable(videoChooserInputField);
         TemporaryDisable(videoChooserButton);
+
+        TemporaryDisable(outputChooserHintLabel);
+        TemporaryDisable(outputChooserInputField);
+        TemporaryDisable(outputChooserButton);
+
+        TemporaryDisable(settingsButton);
+        TemporaryDisable(helpButton);
     }
 
     private static void EnableEverything()
@@ -1053,13 +1063,16 @@ public class GUI
         ReEnable(paimonFileInputHintLabel);
         ReEnable(paimonFileInputField);
         ReEnable(paimonFileChooserButton);
+
         ReEnable(paimonAccountChooserHintLabel);
         ReEnable(paimonAccountChooser);
+
         ReEnable(onlineDatabaseCategoryHintLabel);
         ReEnable(onlineDatabaseHintLabel);
         ReEnable(onlineDatabaseStatusLabel);
         ReEnable(onlineDatabaseSyncButton);
         ReEnable(onlineDatabaseCategoryChooser);
+
         ReEnable(saveFileRadioHintLabel);
         ReEnable(saveFileMergeRadio);
         ReEnable(saveFileReplaceRadio);
@@ -1067,6 +1080,13 @@ public class GUI
         ReEnable(videoChooserHintLabel);
         ReEnable(videoChooserInputField);
         ReEnable(videoChooserButton);
+
+        ReEnable(outputChooserHintLabel);
+        ReEnable(outputChooserInputField);
+        ReEnable(outputChooserButton);
+
+        ReEnable(settingsButton);
+        ReEnable(helpButton);
     }
 
     private static void DisablePaimonAccountChooser()
