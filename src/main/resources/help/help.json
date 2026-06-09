@@ -30,7 +30,8 @@
             "image-name-dark":  "/help/paimon1.png",
             "text-lines": [
                 "help-paimon-1",
-                "help-paimon-2"
+                "help-paimon-2",
+                "help-paimon-disclaimer"
             ]
         },
         {

@@ -7,7 +7,7 @@ import com.formdev.flatlaf.themes.*;
 import com.formdev.flatlaf.ui.FlatButtonBorder;
 import com.google.gson.*;
 import pyguy.types.*;
-import pyguy.util.Utils;
+import pyguy.util.*;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -23,6 +23,7 @@ import java.util.*;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.atomic.*;
+import java.util.regex.*;
 
 // TODO Help?
 public class GUI
@@ -59,6 +60,7 @@ public class GUI
     private static final List<Runnable> appModeChangeSubscribeList = new ArrayList<>();
 
     private static Taskbar taskbar = null;
+    private static Desktop desktop = null;
 
     private static BufferedImage helpPanelImage = null;
 
@@ -952,18 +954,7 @@ public class GUI
         {
             String textString = I18N.GetString(string);
 
-            JTextArea fakeLabel = new JTextArea(textString);
-
-            fakeLabel.setPreferredSize(null);
-
-            fakeLabel.setEditable(false);
-            fakeLabel.setLineWrap(true);
-            fakeLabel.setWrapStyleWord(true);
-            fakeLabel.setOpaque(false);
-            fakeLabel.setFocusable(false);
-            fakeLabel.setBorder(null);
-
-            helpTextPanel.add(fakeLabel, constraints);
+            helpTextPanel.add(new HelpTextParagraph(textString, desktop, Settings.GetAppMode() == Settings.AppMode.DARK), constraints);
             constraints.gridy++;
         }
 
@@ -980,7 +971,7 @@ public class GUI
         helpTextPanel.revalidate();
         helpTextPanel.repaint();
 
-        helpTextScrollPane.setPreferredSize(
+        helpTextPanel.setPreferredSize(
             new Dimension(
                 maxTextDimension.width,
                 helpTextScrollPane.getPreferredSize().height
@@ -1660,6 +1651,11 @@ public class GUI
             {
                 taskbar = tempTaskbar;
             }
+        }
+
+        if (Desktop.isDesktopSupported())
+        {
+            desktop = Desktop.getDesktop();
         }
 
         window = new JFrame(I18N.GetString("app-title"));

@@ -80,7 +80,7 @@
 
     "exit": "Exit",
 
-    "help-intro-1": "This program lets you scan your Genshin Impact achievements without direct interaction with the game. In particular it scans achievements for the website https://paimon.moe, which you would have to use as a tracker if you wanted to use this scanner. It works with video recordings of the game so you will need a screen recorder of some kind that lets you record Genshin Impact as a whole. The following pages act as a tutorial/user manual for the software.",
+    "help-intro-1": "This program lets you scan your Genshin Impact achievements without direct interaction with the game. In particular it scans achievements for [https://paimon.moe](https://paimon.moe/), which you have to use as a tracker if you want to use this scanner. It works with video recordings of the game so you will need a screen recorder of some kind that lets you record Genshin Impact as a whole. The following pages act as a tutorial/user manual for the software.",
     "help-intro-2": "Hope it proves to be useful to you!\n- PyGuy3",
 
     "help-main":    "Main UI",
@@ -94,13 +94,14 @@
     "help-main-9":  "9: Scan Progress Bar & Start Button. The progress bar contains a message informing you of what is missing to begin a scan.",
 
     "help-paimon":   "Paimon.moe",
-    "help-paimon-1": "You will need a save file from https://paimon.moe (yes, even if you have never used the site before). The save file contains information required for the site to read the scan file created by this program, and it cannot be generated, so it must be downloaded.",
+    "help-paimon-1": "You will need a save file from [https://paimon.moe](https://paimon.moe/) (yes, even if you have never used the site before). The save file contains information required for the site to read the scan file created by this program, and it cannot be generated, so it must be downloaded.",
     "help-paimon-2": "Once you enter the site, you will need to access this menu, and press \"Export & Import Data\".\n(Continues in page 4)",
     "help-paimon-3": "Press \"Download Data\" to get a local copy of your save file. This is the file you will input into the Paimon.moe Save File input (1).",
-    "help-paimon-4": "Do note the account you want to write to so you select the same one in the Account Selection box (2).",
+    "help-paimon-4": "Do note the account you want to write to, so you select the same one in the Account Selection box (2).",
+    "help-paimon-disclaimer": "DISCLAIMER: Neither the developer or the project are affiliated with Paimon.moe or its developers in any way, shape or form. This scanner uses the platform simply for its ease of use.",
 
     "help-database":   "Online Database",
-    "help-database-1": "This program depends on an already-existing database of achievements, in this case the one hosted by https://paimon.moe. This means that an active internet connection is required to fetch it.",
+    "help-database-1": "This program depends on an already-existing database of achievements, in this case the one hosted in the Paimon.moe servers. This means that an active internet connection is required to fetch it.",
     "help-database-2": "Without this, the achievements cannot be verified, and an output file cannot be generated since it depends on internal IDs only found inside the database.",
     "help-database-3": "Since the database changes periodically, you should sync it using the Sync button (3) after every Genshin Impact patch update. A local copy is kept and the program will NOT automatically reload it after Genshin Impact updates, so if you're using an old version of the database, you might not be getting all the achievements you've actually obtained in the output file.",
 
@@ -109,11 +110,11 @@
 
     "help-video":   "Video File",
     "help-video-1": "This program requires a video file to function. It does not control your keyboard and mouse to scan your achievements (which is why it does not break Genshin Impact's Terms of Service), so you must record the files yourself. Each video file must be a screen recording of you scrolling through all your achievements in one singular category (more than one video will be required for multiple categories). The video must be in a 16:9 resolution (ensure Genshin Impact is set to a 16:9 resolution under Graphics settings, ideally set to 1920x1080). You must use the scroll wheel (no dragging the scroll bar) and you must keep your cursor in the red rectangle (do not hover any of the achievements themselves in-game). The video must start already in the achievements menu, with the correct category selected, and must end in that same category.",
-    "help-video-2": "The resulting file is what you are going to input into the Video File input (6). An example input video file can be found in the program's GitHub repository.",
+    "help-video-2": "The resulting file is what you are going to input into the Video File input (6). An example input video file can be found in the program's [GitHub repository](https://github.com/ThePythonGuy3/Genshin-Impact-Achievement-Scanner/blob/master/EXAMPLE_INPUT_VIDEO_FILE.mp4).",
 
     "help-output":   "Output File",
-    "help-output-1": "Here you select where the scan output should go. The output file is a valid https://paimon.moe save file, which means you can use it as an input for a future scan if you want to add more achievements or a different category. If you cancel a scan, it will still be updated, since it will count all the achievements the scanner was able to verify before it was interrupted, so no data is lost.\n(What to do with this file in the next page)",
+    "help-output-1": "Here you select where the scan output should go. The output file is a valid Paimon.moe save file, which means you can use it as an input for a future scan if you want to add more achievements or a different category. If you cancel a scan, it will still be updated, since it will count all the achievements the scanner was able to verify before it was interrupted, so no data is lost.\n(What to do with this file in the next page)",
     "help-output-2": "Once you have a generated file, in the same menu where you downloaded your save file (See page 3) you get the option to \"Select JSON File\". This is where you are going to load the generated save file. Once loaded, it should reload automatically and your achievements should be there under \"Database\" > \"Achievements\".",
-    "help-output-3": "It is important to note the scanner is not 100% exact. This scanner uses Computer Vision and Optical Character Recognition to read the achievements, and they are not without flaw. From my own testing, it should be around 95%-98% accurate, but it depends on the quality of the video provided and other factors. False positives are almost impossible (HoYo would have to make two achievements in a single category with names that are too similar for it to be able to happen) but expect false negatives. Some manual work will be required to make your list 100% exhaustive but this should hopefully remove the vast majority of the work.",
-    "help-output-4": "WARNING: YOU SHOULD KEEP A COPY OF THE ORIGINAL SAVE FILE. I AM NOT RESPONSIBLE FOR THE POTENTIAL LOSS OF SAVE FILE DATA CAUSED BY LOADING A GENERATED SAVE FILE. PROCEED AT YOUR OWN RISK."
+    "help-output-3": "It is important to note the scanner is not 100% exact. This scanner uses Computer Vision and Optical Character Recognition to read the achievements, and they are not without flaw. After testing with real data, the accuracy seems to be around 95%-98%, but it depends on the quality of the video provided and other factors. False positives are almost impossible (HoYo would have to add two achievements in a single category with names that are too similar for it to be able to happen), but expect false negatives. Some manual work will be required to make your list 100% exhaustive but this should hopefully remove the vast majority of the work.",
+    "help-output-4": "WARNING: YOU SHOULD KEEP A COPY OF THE ORIGINAL SAVE FILE. THE DEVELOPER IS NOT RESPONSIBLE FOR THE POTENTIAL LOSS OF SAVE FILE DATA CAUSED BY LOADING A GENERATED SAVE FILE. PROCEED AT YOUR OWN RISK."
 }
